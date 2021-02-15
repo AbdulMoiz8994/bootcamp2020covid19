@@ -1,0 +1,31 @@
+
+
+.container{
+    margin: 50px auto !important;
+}
+.card{
+    margin: 70px 60px !important;
+    box-shadow: 0px 0px 20px gray !important;
+}
+.recovered{
+    background-color: rgba(50,205,50,0.7) !important;
+}
+.recovered::first-line{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.deaths{
+    background-color:  rgba(128,0,0, 0.9) !important;
+}
+.deaths::first-line{
+    font-size: xx-large;
+    font-weight: bold;
+}
+.infected{
+    background-color: #EF5354 !important;
+}
+.infected::first-line{
+    font-weight: bold !important;
+    font-size: xx-large !important;
+
+}
