@@ -39,6 +39,6 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Insatlling Surge
-        run: npm insatll --global surge
+        run: npm install --global surge
       - name: Deploying Surge
         run: surge ./build http://bootcampcovid19.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}   
