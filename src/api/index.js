@@ -6,7 +6,7 @@ const url='https://covid19.mathdro.id/api';
 
 // console.log(url)
 export async function Globalapi(country) {
-console.log(country)
+// console.log(country)
     let ChangeUrl=url
     if(country){
         ChangeUrl=`${url}/countries/${country}`

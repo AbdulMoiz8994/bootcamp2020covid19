@@ -11,16 +11,16 @@ import {Countries} from '../../api/index'
 import styles from './CountryPicker.module.css'
 
 export const  CountryPicker=({handleChangeCountry})  =>{
-    console.log(handleChangeCountry)
+    // console.log(handleChangeCountry)
   const[datacountries,setdatacountries]=useState([])
 useEffect(() =>{
   async function  fetchCountires() {
      const data=await Countries()
-      console.log(data)    
+      // console.log(data)    
       setdatacountries(data)
    }
    fetchCountires()
-},[setdatacountries])
+},[])
 
 
 

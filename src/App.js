@@ -18,6 +18,7 @@ function App() {
 
 let[data,setData]=useState({})
 let[country,setCountry]=useState('')
+
 useEffect(()=>{
   async function fetchData() {
     const data= await Globalapi()
@@ -29,7 +30,7 @@ useEffect(()=>{
 },[])
 
 const handleChangeCountry= async(countries) =>{
-  console.log(countries)
+  // console.log(countries)
   let fetchedData;
     if(countries==='Global'){
     fetchedData= await Globalapi()

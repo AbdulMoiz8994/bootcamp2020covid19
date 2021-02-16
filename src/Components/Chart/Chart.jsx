@@ -18,7 +18,7 @@ export const Chart = ({data:{confirmed,deaths,recovered},country}) => {
             // console.log(data)
             setDailData(data)
         }
-        console.log(dailyData)
+        // console.log(dailyData)
             fetchDailyData()
     },[])
 
