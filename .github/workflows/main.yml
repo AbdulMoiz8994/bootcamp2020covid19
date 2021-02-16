@@ -30,7 +30,7 @@ jobs:
           version: 14
     
       - name: Installing yarn
-        uses: Borales/actions-yarn@v2.1.0 
+        uses: Borales/actions-yarn@v2.0.0 
         with:
           cmd: insatll
           
@@ -41,4 +41,4 @@ jobs:
       - name: Insatlling Surge
         run: npm insatll --global surge
       - name: Deploying Surge
-        run: surge ./build http://bootcampcovid19.surge.sh/ --token ${{secrets.SURGE_TOKEN}}   
+        run: surge ./build http://bootcampcovid19.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}   
