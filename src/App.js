@@ -17,20 +17,37 @@ import {Globalapi} from './api/index'
 function App() {
 
 let[data,setData]=useState({})
+let[country,setCountry]=useState('')
 useEffect(()=>{
   async function fetchData() {
     const data= await Globalapi()
-    console.log(data);
+    // console.log(data);
     setData(data)
   }
   fetchData()
   
 },[])
+
+const handleChangeCountry= async(countries) =>{
+  console.log(countries)
+  let fetchedData;
+    if(countries==='Global'){
+    fetchedData= await Globalapi()
+    }
+    else{
+      fetchedData= await Globalapi(countries)
+    }
+    setData(fetchedData)
+    setCountry(countries)    
+// console.log(fetchedData)
+
+}
   return (
     <div className={style}>
     <Cards data={data} />
-   <Chart/>
-  <CountryPicker/>
+    <CountryPicker handleChangeCountry={handleChangeCountry}/>
+   <Chart  data={data} country={country}/>
+  
     </div>
   );
 }

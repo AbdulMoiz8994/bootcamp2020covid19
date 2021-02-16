@@ -18,7 +18,7 @@ if(!confirmed){
     return "Loading..."
 }
   return (
-    //   <div className={styles.container}>
+      <div className={styles.container}>
 
       <Grid container spacing={10}>
 
@@ -103,7 +103,7 @@ if(!confirmed){
       </CardContent>    
     </Grid>
     </Grid>
-    // </div>
+   </div>
   );
 }
 
